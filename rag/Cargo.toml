@@ -1,0 +1,200 @@
+#[registries]
+#pgd-registry = { index = "https://artifactory.pegadaian.co.id/repository/cargo-rustc/" }
+# simple lib in artifactory:
+# https://artifactory.pegadaian.co.id/#browse/search/raw:5e739c1e1f8bdb20b0bdeac3eec30c29
+# https://artifactory.pegadaian.co.id/#browse/search/raw:6dfda0a843f4201d5523d03c2defbfa2
+# category: raw to wasm
+
+[package]
+name = "rag"
+version = "0.1.0"
+edition = "2024"
+authors = ["istamar<istamar.nugraha@pegadaian.co.id>"]
+description = "Hybrid General Agentic RAG"
+#keywords = ["ai", "llm", "anthropic", "structured-thinking", "rag"]
+#categories = ["algorithms"]
+
+#MoE LLM
+#Standard
+# -Agentic
+# -Expanded(Hyper,Meta,Omni)
+# -Orchestrate(ARO,COE,AKC)
+# -Multi Agent
+#HAC,UCP,PIF
+#Multi Agent
+#NR-AGI-ASI-Singular
+#
+#https://github.com/GUT-AI
+#https://www.youtube.com/watch?v=bbq0b_FpYEY&t=12s&pp=ygUfcnVzdCBpcyB0aGUgbGFuZ3VhZ2Ugb2YgdGhlIGFnaQ%3D%3D
+#https://github.com/advancedresearch/asi_core0
+#
+#https://github.com/tracel-ai/burn
+#
+#https://github.com/tmc/llama-rs
+#https://github.com/guillaume-be/rust-bert
+#https://github.com/LaurentMazare/tch-rs
+
+#lib os notes unix:
+#alsa sys:
+# ubuntu:
+# sudo apt-get install libasound2-dev
+# sudo apt-get install libudev-dev
+# redhat/centos:
+# sudo dnf install alsa-lib alsa-utils
+# yum install alsa-lib-devel
+# yum install kernel-headers kernel-devel ffmpeg-devel
+
+[features]
+default = ["std"]
+std = []
+offline = []
+
+[lib]
+crate-type = ["cdylib","rlib"]
+
+#[features]
+#default = ["console_error_panic_hook"]
+
+# [target.x86_64-pc-windows-msvc]
+# linker = "rust-lld"
+
+#[target.x86_64-unknown-linux-musl]
+#linker = "x86_64-linux-gnu-gcc"
+
+# [target.x86_64-unknown-linux-musl]
+# linker = "zig"
+# rustflags = ["-C", "link-arg=-target", "-C", "link-arg=x86_64-linux-musl"]
+#
+# [env]
+# CC_x86_64_unknown_linux_musl = "zig cc -target x86_64-linux-musl"
+# CXX_x86_64_unknown_linux_musl = "zig c++ -target x86_64-linux-musl"
+# AR_x86_64_unknown_linux_musl = "zig ar"
+
+[dependencies]
+agent_difusser = { path = "../agent_difusser" }
+task = { path = "../task" }
+execute = { path = "../execute" }
+orchestrate_workflow = { path = "../orchestrate_workflow" }
+console_error_panic_hook = { version = "0.1.7", optional = true }
+tokio = { version = "1.42.0", features = ["full","macros", "rt-multi-thread"] }
+log = "0.4.22"
+env_logger = "0.11.6"
+#chrono = "0.4.39"
+warp = "0.3.7"
+serde = { version = "1.0.195", features = ["derive"]}
+serde_derive = "1.0.217"
+thiserror = "2.0.12"
+axum = "0.7.7"
+once_cell = "1.19.0"
+serde_json = "1.0.108"
+surrealdb = "2.1.4"
+tower-http = { version = "0.5.0", features = ["cors"] }
+time = "0.3.37"
+anyhow = "1.0.95"
+jsonwebtoken = "9.2.0"
+ethers = { version = "2.0.14", features = ["rustls", "abigen"] }
+aes = "0.8.4"
+aes-gcm = "0.10.3"
+rand = "0.9.0"
+actix-web = "4.0"
+# diesel = { version = "1.4.5", features = ["postgres"] }  # Disabled - requires libpq.lib
+dotenv = "0.15"
+ndarray = "0.15"
+csv = "1.3.1"
+uuid = { version = "1.12.1", features = ["v8","v4","serde"] }
+sha2 = "0.10.8"
+hex = "0.4.3"
+redis = "0.28.1"
+bincode = "1.3.3"
+lazy_static = "1.4.0"
+nom = "8.0.0"
+qdrant-client = "1.13.0"
+langchain-rust = { version = "4.6.0", features = ["surrealdb"] }
+#langchain-rust = { version = "4.6.0", features = ["postgres", "qdrant", "surrealdb"] }
+futures-util = "0.3.31"
+scraper = "0.23.1"
+md5 = "0.7.0"
+tokio-postgres = "0.7.13"
+walkdir = "2.5.0"
+web3 = "0.19.0"
+clap = { version = "4.5.27", features = ["derive"] }
+tracing = "0.1"
+async-trait = "0.1"
+regex = "1.10"
+bevy = "0.13.2"
+generic-array = "0.14.7"
+rusttype = "0.9.3"
+base64 = { version = "0.22.1", features = ["alloc"] }
+rodio = { version = "0.20.1", default-features = true }
+msedge-tts = "0.2.4"
+ethereum_abi = "0.4.0"
+sqlx = { version = "0.8.5", features = ["runtime-tokio-native-tls", "postgres", "time", "macros"] }
+mime  = "0.3.17"
+colored = "3.0.0"
+wasm-bindgen = { version = "0.2.89", features = ["serde-serialize"] }
+git2 = "0.20.2"
+parquet = "56.2.0"
+reqwest = { version = "0.12", features = ["json", "multipart"] }
+# openssl vendored requires perl - disabled for Windows without Perl
+# openssl = { version = "0.10.63", features = ["vendored"] }
+native-tls = "0.2"
+bytes = "1.11.0"
+url = "2.5.7"
+zip = "6.0.0"
+##Socket Chat (via Postman)
+#tokio = { version = "1.0", features = ["full"] }
+#warp = "0.3"
+#serde = { version = "1.0", features = ["derive"] }
+#serde_json = "1.0"
+futures = "0.3"
+#lazy_static = "1.4"
+#uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+parking_lot = "0.12"  # For efficient mutexes
+ibm_db = "1.0.6" #harus install db2app64.lib di C
+##odbc = "0.17.0"
+odbc-api = "2"
+fastembed = "4"
+serialport = "4"
+##mnist = "0.4"  # requires local dataset files: data/train-images-idx3-ubyte
+image = "0.25"
+lopdf = "0.34"
+# voice-stream = "0.4.0"  # Disabled: ort/voice_activity_detector conflicts with existing deps
+# ibm_db = "1.0.6"
+# odbc-api = "2"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.34"
+
+#[build-dependencies]
+#protoc-rust-grpc = "0.8.2"
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
+debug = true
+
+# cargo run --bin jobbuild
+#[[bin]]
+#name = "jobbuild"
+#path = "src/scripts_modules/jobcron/libPresetsBuild.rs"
+
+# cargo run --bin jobqueue
+#[[bin]]
+#name = "jobqueue"
+#path = "src/scripts_modules/queue/libPresetsClient.rs"
+
+# cargo run --bin testRagLangchain
+#[[bin]]
+#name = "testRagLangchain"
+#path = "src/bin/testRagLangchain.rs"
+
+# cargo run --bin nft_pawn_chain
+[[bin]]
+name = "nft_pawn_chain"
+path = "src/bin/nft_pawn_chain.rs"
+
+# cargo run --bin login_credential_qdrant
+[[bin]]
+name = "login_credential_qdrant"
+path = "src/bin/login_credential_qdrant.rs"
