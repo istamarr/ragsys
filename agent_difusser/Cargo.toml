@@ -1,0 +1,126 @@
+[package]
+name = "agent_difusser"
+version = "0.1.0"
+edition = "2024"
+#authors = ["istamarrozid<istamar.nugraha@pegadaian.co.id,istamar.rozid@gmail.com>"]
+
+[dependencies]
+tokio = { version = "1.42.0", features = ["full","macros", "rt-multi-thread",] }
+warp = "0.3.7"
+serde = { version = "1.0.195", features = ["derive"]}
+thiserror = "2.0.12"
+chrono = "0.4.39"
+anyhow = "1.0.95"
+jsonwebtoken = "9.2.0"
+wasm-bindgen = "0.2.84"
+lazy_static = "1.5.0"
+aes = "0.8.4"
+aes-gcm = "0.10.3"
+base64 = { version = "0.22.1", features = ["alloc"] }
+rand = "0.9.0"
+surrealdb = "2.1.4"
+serde_derive = "1.0.217"
+uuid = { version = "1.12.1", features = ["v8"] }
+sha2 = "0.10.8"
+hex = "0.4.3"
+redis = "0.28.1"
+log = "0.4.22"
+dotenv = "0.15"
+tokio-postgres = "0.7.13"
+bevy = { version = "0.11", default-features = false, features = ["png", "hdr"] }
+bevy_egui = "0.22"
+#diffusers = { version = "0.3.1", features = ["tch"] }
+#diffusers = "0.3.1"
+#tch = { version = "0.9", features = ["cuda"] }   # or remove "cuda" if only have CPU
+image = "0.25.8"
+tempfile = "3.8"
+parking_lot = "0.12.4"
+web3 = "0.19.0"
+#ipfsapi = "0.4.0"
+# ipfs-api-backend-hyper = "0.6"
+futures = "0.3.31"
+#ipfs-api-backend-actix = "0.7"
+actix-web = "4.11.0"
+actix-web-httpauth = "0.8.2"
+actix-rt = "2.5"
+# ipfs-api = "0.17.0"
+# ipfs-api-backend-hyper = "0.6.0"
+ipfs-api = "0.16.0"
+izihawa-ipfs-api = "0.16.3"
+reqwest = { version = "0.12.15", features = ["json", "multipart","blocking","stream"] }
+serde_json = "1.0.145"
+tokio-util = "0.7.16"
+bytes = "1.10.1"
+env_logger = "0.11"
+futures-util = "0.3.31"
+qrcode = "0.14"
+imageproc = "0.25"
+ab_glyph = "0.2.32"
+leptess = { version = "0.4", optional = true }
+lopdf = "0.34"
+pulldown-cmark = "0.12"
+zip = "2"
+ort-sys = "=2.0.0-rc.9"
+libgit2-sys = "0.18.5+1.9.4"
+
+[build-dependencies]
+wasm-bindgen-test = "0.3.34"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies.getrandom]
+version = "0.2"
+features = ["js"]
+
+[profile.dev]
+debug = 0
+
+[profile.test]
+debug = 0
+
+[profile.release]
+panic = 'abort'
+
+[[bin]]
+name = "agent_img"
+path = "src/bin/agent_img.rs"
+
+[[bin]]
+name = "agent_flyer"
+path = "src/bin/agent_flyer.rs"
+
+[[bin]]
+name = "agent_qr"
+path = "src/bin/agent_qr.rs"
+
+[[bin]]
+name = "agent_doc"
+path = "src/bin/agent_doc.rs"
+
+[[bin]]
+name = "difsr_server"
+path = "src/bin/difsr_server.rs"
+
+
+#Notes
+#| Task | File | Status |
+#|---|---|---|
+#| NFT Letter | [src/documents/print_nft_letter.rs](cci:7://file:///c:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/agent_difusser/src/documents/print_nft_letter.rs:0:0-0:0) |
+#| QR Code Handler | [src/qrcode/qrcode_handler.rs](cci:7://file:///c:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/agent_difusser/src/qrcode/qrcode_handler.rs:0:0-0:0) |
+#| Flyer Generator | [src/handler/dfsr_img.rs](cci:7://file:///c:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/agent_difusser/src/handler/dfsr_img.rs:0:0-0:0) |
+#| `agent_qr` bin | [src/bin/agent_qr.rs](cci:7://file:///c:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/agent_difusser/src/bin/agent_qr.rs:0:0-0:0) |
+#| `agent_flyer` bin | [src/bin/agent_flyer.rs](cci:7://file:///c:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/agent_difusser/src/bin/agent_flyer.rs:0:0-0:0) |
+#| Cargo.toml deps | [qrcode](cci:9://file:///c:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/agent_difusser/src/qrcode:0:0-0:0), `imageproc`, `ab_glyph` |
+#| Module exposure | [lib.rs](cci:7://file:///c:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/agent_difusser/src/lib.rs:0:0-0:0), [documents/mod.rs](cci:7://file:///c:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/agent_difusser/src/documents/mod.rs:0:0-0:0)
+
+#**To test a build:**
+#cargo build --bin agent_flyer
+#cargo build --bin agent_qr
+
+#run:
+#powershell
+#cargo run --bin agent_flyer preview
+#cargo run --bin agent_qr number 123456
+
+#Note: Text rendering on the flyer requires a TTF font. On Windows, [C:\Windows\Fonts\arial.ttf](cci:7://file:///Windows/Fonts/arial.ttf:0:0-0:0) is auto-detected. If the flyer shows layout but no text, set `FLYER_FONT_PATH` to any `.ttf` path. The layout (colored sections, bullet circles, logo/QR placeholders) renders regardless.
