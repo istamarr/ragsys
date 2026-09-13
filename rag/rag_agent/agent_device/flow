@@ -1,0 +1,70 @@
+┌─────────────────────────────────────────────────────────────────┐
+│                    PHYSICAL RFID/NFC DEVICE                     │
+└────────────────────┬────────────────────────────────────────────┘
+                     │ raw tag reads
+         ┌───────────┴───────────┐
+         │                       │
+         ▼                       ▼
+ [rfid_nfc_rag_chaining]    [FIWARE Context Broker]
+  RfidRagChaining             NGSIv2 / NGSI-LD
+  │                               │
+  ├─ scan_for_tags()              │ subscription (RFIDTag, Asset)
+  ├─ apply_metal_compensation()   │ webhook push / poll
+  ├─ validate_valuable_tag()      │
+  ├─ estimate_position()          ▼
+  │  (RSSI → x,y,z → Zone_A/B)  [agent_device]
+  ├─ detect anomalies             FiwareAgentHandler
+  ├─ generate_insights() [RAG]    │
+  └─ store_scan_results()         ├─ process_notification()
+         │                        │   NgsiEntity → FiwareRfidEntity
+         │                        ├─ rfid_to_text()
+         │                        ├─ generate_embedding()
+         │                        │   Ollama nomic-embed-text (dim=384)
+         │                        │   fallback → hash embedding
+         │                        └─ upsert_to_qdrant()
+         │                             collection: ASIST_MASTER
+         │                                    │
+         └──────────────────────────────────┐ │
+                                            ▼ ▼
+                                    ┌──────────────┐
+                                    │  Qdrant DB   │
+                                    │  vec dim=384 │
+                                    │  cosine sim  │
+                                    └──────┬───────┘
+                                           │
+                                    user HTTP request
+                                           │
+                                           ▼
+                                   [embedd_handler]
+                                   quickThink(uid, CmdBody)
+                                   │
+                                   │ route by tags:
+                                   ├─ [flowcode/fixco] ──► base_chain::run()
+                                   │                        code analysis
+                                   ├─ [agentic/orchestrator] ► run_rag_orchestrator()
+                                   ├─ [cag/cache] ──────► cag_pipeline()
+                                   │                        fast cached path
+                                   └─ default ──────────► base_chain::rag_pipeline()
+                                                            │
+                                                            ├─ embed query → Qdrant search
+                                                            ├─ retrieve RFID context
+                                                            ├─ build prompt + context
+                                                            └─ LLM (PEDIA_ASIST_LM)
+                                                                       │
+                                                                       ▼
+                                                               JSON response
+
+Flow: agent_device.rs → embedd_handler.rs ← rfid_nfc_rag_chaining.rs
+RFID tag ──► [two ingest paths] ──► Qdrant (vec 384d) ──► quickThink query ──► LLM ──► result
+
+
+Role of each file
+File	Role	Entry Point
+rfid_nfc_rag_chaining.rs	Direct reader path — scan → validate → position → insight → store	comprehensive_scan()
+agent_device.rs	FIWARE path — subscribe/poll → parse NGSI → embed → upsert Qdrant	process_notification() / poll_and_sync()
+embedd_handler.rs	Query router — receives user request, routes to correct pipeline, returns LLM response	quickThink()
+
+
+rfid_nfc_rag_chaining = direct hardware path (use case aware: ValuablesTracking, JewelryInventory, SupplyChain, etc.)
+agent_device = network path via FIWARE broker (IoT platform integration)
+embedd_handler = the query side — both ingest paths write to the same Qdrant, so quickThink retrieves from either source transparently

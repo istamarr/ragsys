@@ -1,0 +1,10 @@
+pub mod templates;
+pub mod boilerplate;
+mod utils;
+pub mod git;
+pub mod ai_analizer;
+pub mod analizer;
+pub mod dependency_resolve;
+pub mod resolve;
+pub mod fixco_llm;
+pub mod diagram_generator;
