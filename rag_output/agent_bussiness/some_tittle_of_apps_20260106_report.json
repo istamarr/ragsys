@@ -1,0 +1,34 @@
+{
+  "project_name": "some_tittle_of_apps",
+  "project_path": "C:\\Users\\istamar.nugraha\\DEV_ISTAMAR\\WORKSPACE_ISTA\\src_code_rag_check\\Mobile_Shopee-E-Commerce-Website\\",
+  "instructions": "show flow bussines, flow chart, diagram, describe and analytical, code for it maybe need to fix",
+  "project_info": {
+    "language": "PHP",
+    "framework": null,
+    "total_files": 75,
+    "total_lines": 3379,
+    "dependencies_count": 0
+  },
+  "code_metrics": {
+    "lines_of_code": 240,
+    "function_count": 0,
+    "class_count": 0,
+    "cyclomatic_complexity": 5.0,
+    "maintainability_index": 90.0,
+    "comment_density": 11.666666984558105
+  },
+  "issues_summary": {
+    "total_issues": 132,
+    "critical": 0,
+    "warning": 0,
+    "info": 132
+  },
+  "security_summary": {
+    "vulnerabilities_count": 0,
+    "high_severity": 0,
+    "medium_severity": 0,
+    "low_severity": 0
+  },
+  "diagrams_count": 4,
+  "rag_response": "Berikut adalah konteks dan struktur flow proses di dalam file sistem operasi (OS) Windows yang bernama C:\\Users\\istamar.nugraha\\DEV_ISTAMAR\\WORKSPACE_ISTA\\src_code_rag_check\\Mobile_Shopee-E-Commerce-Website:\n\n**Konteks:**\n\n* File system OS Windows 10 Home\n* Komputer memiliki beberapa folder dan subfolder yang digunakan untuk menyimpan file dan data.\n* Folder `src_code_rag_check` adalah folder yang digunakan untuk menyimpan kode sumber (source code) aplikasi Mobile_Shopee-E-Commerce-Website.\n* Folder `Mobile_Shopee-E-Commerce-Website` adalah folder yang digunakan untuk menyimpan kode sumber aplikasi Mobile_Shopee-E-Commerce-Website, termasuk file konfigurasi, file source code, dan file lainnya.\n\n**Struktur Flow Proses:**\n\n1. **User Access**: User (istamar.nugraha) mencoba mengakses komputer dengan menggunakan username dan password yang telah ditentukan.\n2. **File System Exploration**: Komputer memeriksa apakah ada folder `src_code_rag_check` yang sudah terbuka, maka user dapat langsung mengakses folder tersebut.\n3. **Navigasi Folder**: User memilih folder `src_code_rag_check` dan navigasikan ke dalamnya untuk melihat konten file-filinya.\n4. **File Periksaan**: User periksa apakah ada file konfigurasi, file source code, atau file lainnya yang relevan dengan aplikasi Mobile_Shopee-E-Commerce-Website.\n5. **Kode Sumber Diakses**: Jika file konfigurasi atau file source code tersedia, user dapat langsung mengaksesnya untuk melihat kode sumber aplikasi.\n6. **Edit Kode Sumber**: User dapat melakukan edisi kode sumber aplikasi di dalam folder `src_code_rag_check`.\n7. **Simpan Kode Sumber**: Setelah edisi kode sumber selesai, user dapat menyimpan file dengan nama yang telah ditentukan.\n8. **File Periksaan Lagi**: User periksa apakah ada file lainnya yang relevan dengan aplikasi Mobile_Shopee-E-Commerce-Website yang belum diakses sebelumnya.\n\nDengan demikian, proses flow ini memungkinkan user untuk mengakses dan melakukan edisi kode sumber aplikasi Mobile_Shopee-E-Commerce-Website."
+}

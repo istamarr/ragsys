@@ -1,0 +1,578 @@
+============================================================
+RAG Pipeline Analysis Report
+============================================================
+
+Project Information
+--------------------
+
+:Project Name: some_tittle_of_apps
+:Project Path: C:\Users\istamar.nugraha\DEV_ISTAMAR\WORKSPACE_ISTA\src_code_rag_check\Mobile_Shopee-E-Commerce-Website\
+:Instructions: show flow bussines, flow chart, diagram, describe and analytical, code for it maybe need to fix
+
+Code Analysis
+-------------
+
+:Language: PHP
+:Framework: N/A
+:Total Files: 75
+:Total Lines: 3379
+:Dependencies: 0
+
+Issues Found
+~~~~~~~~~~~~
+
+* **[Low]** cart.php:10 - Line too long (135 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** cart.php:14 - Line too long (148 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** footer.php:10 - Line too long (148 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** footer.php:45 - Line too long (126 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** footer.php:49 - Line too long (177 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** footer.php:50 - Line too long (200 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** footer.php:51 - Line too long (202 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** footer.php:54 - Line too long (189 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** footer.php:57 - Line too long (191 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** header.php:9 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** header.php:12 - Line too long (210 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** header.php:13 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** header.php:16 - Line too long (199 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** header.php:32 - Line too long (139 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** header.php:42 - Line too long (180 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** header.php:69 - Line too long (130 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:9 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:12 - Line too long (210 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:13 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:16 - Line too long (199 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:26 - Line too long (147 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:36 - Line too long (188 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:87 - Line too long (137 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:108 - Line too long (154 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:109 - Line too long (174 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:110 - Line too long (158 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:112 - Line too long (146 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:113 - Line too long (136 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:129 - Line too long (133 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:150 - Line too long (135 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:151 - Line too long (155 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:152 - Line too long (139 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:154 - Line too long (142 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:155 - Line too long (132 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:172 - Line too long (168 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:174 - Line too long (201 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:347 - Line too long (148 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:382 - Line too long (132 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:386 - Line too long (184 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:387 - Line too long (204 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:388 - Line too long (206 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:391 - Line too long (193 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\cart.html:394 - Line too long (195 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:9 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:12 - Line too long (210 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:13 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:16 - Line too long (199 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:26 - Line too long (147 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:36 - Line too long (188 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:651 - Line too long (218 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:659 - Line too long (218 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:667 - Line too long (218 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:685 - Line too long (148 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:720 - Line too long (132 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:724 - Line too long (184 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:725 - Line too long (204 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:726 - Line too long (206 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:729 - Line too long (193 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\index.html:732 - Line too long (195 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:9 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:12 - Line too long (210 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:13 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:16 - Line too long (199 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:26 - Line too long (147 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:36 - Line too long (188 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:102 - Line too long (127 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:114 - Line too long (182 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:152 - Line too long (124 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:153 - Line too long (142 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:163 - Line too long (144 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:164 - Line too long (145 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:165 - Line too long (144 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:175 - Line too long (139 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:176 - Line too long (158 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:177 - Line too long (143 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:207 - Line too long (440 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:208 - Line too long (440 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:375 - Line too long (148 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:410 - Line too long (132 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:414 - Line too long (184 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:415 - Line too long (204 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:416 - Line too long (206 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:419 - Line too long (193 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\product.html:422 - Line too long (195 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** HTML Template\style.css.map:1 - Line too long (688 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** index.js:87 - Line too long (122 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** index.js:114 - Line too long (122 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** README.md:2 - Line too long (263 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\notFound\_cart_notFound.php:12 - Line too long (126 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\notFound\_cart_notFound.php:21 - Line too long (148 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\notFound\_cart_notFound.php:23 - Line too long (291 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\notFound\_wishlist_notFound.php:13 - Line too long (122 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_blogs.php:13 - Line too long (216 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_blogs.php:21 - Line too long (216 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_blogs.php:29 - Line too long (216 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:30 - Line too long (151 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:51 - Line too long (160 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:52 - Line too long (180 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:53 - Line too long (164 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:58 - Line too long (148 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:63 - Line too long (135 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:74 - Line too long (152 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:88 - Line too long (148 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_cart-template.php:90 - Line too long (291 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_new-phones.php:23 - Line too long (214 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_new-phones.php:41 - Line too long (132 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_new-phones.php:43 - Line too long (146 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:11 - Line too long (122 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:19 - Line too long (137 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:21 - Line too long (151 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:50 - Line too long (199 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:89 - Line too long (126 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:99 - Line too long (128 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:100 - Line too long (129 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:101 - Line too long (128 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:111 - Line too long (126 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:112 - Line too long (145 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:113 - Line too long (130 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:143 - Line too long (428 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_products.php:144 - Line too long (428 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_special-price.php:36 - Line too long (215 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_special-price.php:54 - Line too long (132 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_special-price.php:56 - Line too long (146 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_top-sale.php:23 - Line too long (210 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_top-sale.php:41 - Line too long (128 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_top-sale.php:43 - Line too long (142 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_wishilist_template.php:29 - Line too long (159 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_wishilist_template.php:51 - Line too long (121 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_wishilist_template.php:52 - Line too long (161 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_wishilist_template.php:56 - Line too long (121 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_wishilist_template.php:57 - Line too long (136 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+* **[Low]** Template\_wishilist_template.php:68 - Line too long (160 characters)
+  - Suggestion: Consider breaking this line into multiple lines
+
+Code Metrics
+------------
+
+:Lines of Code: 240
+:Functions: 0
+:Classes: 0
+:Cyclomatic Complexity: 5.00
+:Maintainability Index: 90.00
+
+Diagrams
+--------
+
+**Business Flowchart**
+
+.. code-block:: mermaid
+
+   flowchart TD
+       A[some_tittle_of_apps] --> B{Analyze Request}
+       B --> C[Route Handler]
+       C --> D0[.git\hooks\applypatch-msg.sample]
+       C --> D1[.git\hooks\pre-applypatch.sample]
+       C --> D2[.git\index]
+       C --> D3[HTML Template\index.html]
+       C --> D4[HTML Template\index.js]
+       C --> E[Process Logic]
+       E --> F{Validation}
+       F -->|Valid| G[Business Logic]
+       F -->|Invalid| H[Error Handler]
+       G --> I[(Database)]
+       I --> J[Response]
+       H --> J
+       J --> K[End]
+
+**Class Diagram**
+
+.. code-block:: mermaid
+
+   classDiagram
+
+**Module Diagram**
+
+.. code-block:: mermaid
+
+   flowchart LR
+       subgraph some_tittle_of_apps
+           M0[Mobile_Shopee-E-Commerce-Website]
+           M1[hooks]
+           M2[info]
+           M3[logs]
+           M4[refs]
+           M5[objects]
+           M6[info]
+           M7[pack]
+           M8[refs]
+           M9[heads]
+       end
+       M0 --> M1
+       M1 --> M2
+       M2 --> M3
+       M3 --> M4
+       M4 --> M5
+       M5 --> M6
+       M6 --> M7
+       M7 --> M8
+       M8 --> M9
+       M9 --> M10
+       M10 --> M11
+       M11 --> M12
+       M12 --> M13
+       M13 --> M14
+       M14 --> M15
+
+**Sequence Diagram**
+
+.. code-block:: mermaid
+
+   sequenceDiagram
+       participant User
+       participant API
+       participant Service
+       participant Database
+   
+       User->>API: Register
+       API->>Service: Process Request
+       Service->>Database: Query Data
+       Database-->>Service: Return Data
+       Service-->>API: Process Result
+       API-->>User: Response
+   
+       User->>API: Login
+       API->>Service: Process Request
+       Service->>Database: Query Data
+       Database-->>Service: Return Data
+       Service-->>API: Process Result
+       API-->>User: Response
+   
+
+RAG Response
+------------
+
+::
+
+   Berikut adalah konteks dan struktur flow proses di dalam file sistem operasi (OS) Windows yang bernama C:\Users\istamar.nugraha\DEV_ISTAMAR\WORKSPACE_ISTA\src_code_rag_check\Mobile_Shopee-E-Commerce-Website:
+   
+   **Konteks:**
+   
+   * File system OS Windows 10 Home
+   * Komputer memiliki beberapa folder dan subfolder yang digunakan untuk menyimpan file dan data.
+   * Folder `src_code_rag_check` adalah folder yang digunakan untuk menyimpan kode sumber (source code) aplikasi Mobile_Shopee-E-Commerce-Website.
+   * Folder `Mobile_Shopee-E-Commerce-Website` adalah folder yang digunakan untuk menyimpan kode sumber aplikasi Mobile_Shopee-E-Commerce-Website, termasuk file konfigurasi, file source code, dan file lainnya.
+   
+   **Struktur Flow Proses:**
+   
+   1. **User Access**: User (istamar.nugraha) mencoba mengakses komputer dengan menggunakan username dan password yang telah ditentukan.
+   2. **File System Exploration**: Komputer memeriksa apakah ada folder `src_code_rag_check` yang sudah terbuka, maka user dapat langsung mengakses folder tersebut.
+   3. **Navigasi Folder**: User memilih folder `src_code_rag_check` dan navigasikan ke dalamnya untuk melihat konten file-filinya.
+   4. **File Periksaan**: User periksa apakah ada file konfigurasi, file source code, atau file lainnya yang relevan dengan aplikasi Mobile_Shopee-E-Commerce-Website.
+   5. **Kode Sumber Diakses**: Jika file konfigurasi atau file source code tersedia, user dapat langsung mengaksesnya untuk melihat kode sumber aplikasi.
+   6. **Edit Kode Sumber**: User dapat melakukan edisi kode sumber aplikasi di dalam folder `src_code_rag_check`.
+   7. **Simpan Kode Sumber**: Setelah edisi kode sumber selesai, user dapat menyimpan file dengan nama yang telah ditentukan.
+   8. **File Periksaan Lagi**: User periksa apakah ada file lainnya yang relevan dengan aplikasi Mobile_Shopee-E-Commerce-Website yang belum diakses sebelumnya.
+   
+   Dengan demikian, proses flow ini memungkinkan user untuk mengakses dan melakukan edisi kode sumber aplikasi Mobile_Shopee-E-Commerce-Website.
+
+RAG Pipeline Flow Chart
+-----------------------
+
+::
+
+   
+   ┌─────────────────────────────────────────────────────────────┐
+   │                    run() in base_chain.rs                   │
+   └────────────────────────┬────────────────────────────────────┘
+                            │
+                            ▼
+   ┌─────────────────────────────────────────────────────────────┐
+   │              rag_pipeline() in rag_pipeline.rs              │
+   │                         │                                   │
+   │                         ▼                                   │
+   │              build_response_model_rag()                     │
+   └────────────────────────┬────────────────────────────────────┘
+                            │
+             ┌──────────────┴──────────────┐
+             ▼                             │
+   ┌─────────────────────┐                 │
+   │ try_burn_lm_asist() │                 │
+   │  (port 9393)        │                 │
+   │  /health → /ask     │                 │
+   │  [X] FAILED          │                 │
+   └─────────┬───────────┘                 │
+             │                             │
+        ┌────┴────┐                        │
+        │ Success?│                        │
+        └────┬────┘                        │
+             │ No ───────────────────────► ┌┴─────────────────────┐
+             │                             │ try_ollama_fallback()│
+             ▼                             │ ollamar/tamar:1b     │
+       ┌───────────┐                       │ /api/chat            │
+       │  Response │◄──────────────────────│ [OK] SUCCESS          │
+       └───────────┘                       └──────────────────────┘
+
+Project Analysis Flow Chart
+---------------------------
+
+::
+
+   
+   ┌─────────────────────────────────────────────────────────────────┐
+   │                some_tittle_of_apps Project Flow                 │
+   └─────────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+   ┌─────────────────────────────────────────────────────────────────┐
+   │              BUSINESS FLOW (from code analysis)                │
+   └────────────────────────┬────────────────────────────────────────┘
+             ┌─────────────────────────────────────────────┐
+             │  ▶ some_tittle_of_apps                      │
+             └────────────────────┬────────────────────────┘
+                                  │
+                             ┌────┴────┐
+                             │❓ Analyze│
+                             └────┬────┘
+                                  │
+                                  ▼
+             ┌─────────────────────────────────────────────┐
+             │  → Route Handler                            │
+             └────────────────────┬────────────────────────┘
+                                  │
+                                  ▼
+             ┌─────────────────────────────────────────────┐
+             │  → .git\hooks\applypatch-msg.sample         │
+             └────────────────────┬────────────────────────┘
+                                  │
+                                  ▼
+             ┌─────────────────────────────────────────────┐
+             │  → .git\hooks\pre-applypatch.sample         │
+             └────────────────────┬────────────────────────┘
+                                  │
+                                  ▼
+             ┌─────────────────────────────────────────────┐
+             │  → .git\index                               │
+             └────────────────────┬────────────────────────┘
+                                  │
+                                  ▼
+             ┌─────────────────────────────────────────────┐
+             │  → HTML Template\index.html                 │
+             └────────────────────┬────────────────────────┘
+                                  │
+                                  ▼
+             ┌─────────────────────────────────────────────┐
+             │  → HTML Template\index.js                   │
+             └────────────────────┬────────────────────────┘
+                            │
+                            ▼
+   ┌─────────────────────────────────────────────────────────────────┐
+   │              REQUEST/RESPONSE SEQUENCE                         │
+   └────────────────────────┬────────────────────────────────────────┘
+        ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌────────────┐  
+        │    User    │  │    API     │  │  Service   │  │  Database  │  
+        └──────┬─────┘  └──────┬─────┘  └──────┬─────┘  └──────┬─────┘  
+               │  ─── Register ───►  │
+               │  ─── Process Request ───►  │
+               │  ─── Query Data ───►  │
+               │  ─── Return Data ───►  │
+               │  ─── Process Result ───►  │
+                            │
+                            ▼
+   ┌─────────────────────────────────────────────────────────────────┐
+   │              MODULE DEPENDENCIES                               │
+   └────────────────────────┬────────────────────────────────────────┘
+        ┌────────────────┐ ┌────────────────┐ ┌────────────────┐ 
+        │ [M] Mobile_Shopee- │ │ [M] hooks      │ │ [M] info       │ 
+        └────────┬───────┘ └────────┬───────┘ └────────┬───────┘ 
+                 │         │         │
+                 └─────────┴─────────┘
+                           │
+                           ▼
+        ┌────────────────┐ ┌────────────────┐ ┌────────────────┐ 
+        │ [M] logs       │ │ [M] refs       │ │ [M] objects    │ 
+        └────────┬───────┘ └────────┬───────┘ └────────┬───────┘ 
+                 │         │         │
+                 └─────────┴─────────┘
+                           │
+                           ▼
+        ┌────────────────┐ ┌────────────────┐ 
+        │ [M] pack       │ │ [M] heads      │ 
+        └────────┬───────┘ └────────┬───────┘ 
+                            │
+                            ▼
+   ┌─────────────────────────────────────────────────────────────────┐
+   │  Language: PHP                  Framework: N/A                │
+   │  Files: 75     Lines: 3379      Dependencies: 0          │
+   └────────────────────────┬────────────────────────────────────────┘
+                            │
+             ┌──────────────┴──────────────┐
+             ▼                             ▼
+   ┌─────────────────────┐       ┌─────────────────────┐
+   │  .html      3 files │       │  .php      21 files │
+   │  .jpg      10 files │       │  .js        2 files │
+   └─────────┬───────────┘       └─────────┬───────────┘
+             │                             │
+             └──────────────┬──────────────┘
+                            ▼
+   ┌─────────────────────────────────────────────────────────────────┐
+   │                    ISSUES DETECTED                              │
+   │  [!] Critical: 0     [~] Warning: 0     [-] Info: 132         │
+   └────────────────────────┬────────────────────────────────────────┘
+                            │
+                            ▼
+   ┌─────────────────────────────────────────────────────────────────┐
+   │                    CODE METRICS (FixCo)                         │
+   │  Functions: 0         Classes: 0         LOC: 240              │
+   │  Complexity: 5.00     Maintainability: 90.00                 │
+   └────────────────────────┬────────────────────────────────────────┘
+                            │
+                            ▼
+   ┌─────────────────────────────────────────────────────────────────┐
+   │                 DIAGRAMS GENERATED (4)                         │
+   │  [D] Business Flowchart                                      │
+   │  [D] Class Diagram                                           │
+   │  [D] Module Diagram                                          │
+   │  [D] Sequence Diagram                                        │
+   └────────────────────────┬────────────────────────────────────────┘
+                            │
+                            ▼
+                     ┌─────────────┐
+                     │  ANALYSIS   │
+                     │  COMPLETE   │
+                     └─────────────┘
+

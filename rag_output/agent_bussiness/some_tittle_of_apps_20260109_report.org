@@ -1,0 +1,64 @@
+#+TITLE: RAG Pipeline Analysis Report
+#+AUTHOR: RAG System
+#+DATE: 2026-01-09 07:02:00
+
+* Project Information
+- Project Name :: some_tittle_of_apps
+- Project Path :: show flow bussines, flow chart, diagram, describe and analytical, code for it maybe need to fix
+- Instructions :: structure flow process of  
+
+* RAG Response
+#+BEGIN_QUOTE
+Maaf, saya tidak bisa menjawab pertanyaan tersebut karena tidak memiliki konteks yang jelas tentang apa yang ingin Anda ulangi. Jika Anda dapat memberikan lebih banyak informasi atau konteks tentang "structure flow process" yang Anda inginkan, saya akan berusaha membantu Anda dengan lebih baik.
+#+END_QUOTE
+
+* RAG Pipeline Flow Chart
+#+BEGIN_EXAMPLE
+
+┌─────────────────────────────────────────────────────────────┐
+│                    run() in base_chain.rs                   │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│              rag_pipeline() in rag_pipeline.rs              │
+│                         │                                   │
+│                         ▼                                   │
+│              build_response_model_rag()                     │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+          ┌──────────────┴──────────────┐
+          ▼                             │
+┌─────────────────────┐                 │
+│ try_burn_lm_asist() │                 │
+│  (port 9393)        │                 │
+│  /health → /ask     │                 │
+│  [X] FAILED          │                 │
+└─────────┬───────────┘                 │
+          │                             │
+     ┌────┴────┐                        │
+     │ Success?│                        │
+     └────┬────┘                        │
+          │ No ───────────────────────► ┌┴─────────────────────┐
+          │                             │ try_ollama_fallback()│
+          ▼                             │ ollamar/tamar:1b     │
+    ┌───────────┐                       │ /api/chat            │
+    │  Response │◄──────────────────────│ [OK] SUCCESS          │
+    └───────────┘                       └──────────────────────┘
+
+#+END_EXAMPLE
+
+* Project Analysis Flow Chart
+#+BEGIN_EXAMPLE
+
+┌─────────────────────────────────────────────────────────────────┐
+│                some_tittle_of_apps Project Flow                 │
+└─────────────────────────────────────────────────────────────────┘
+                         │
+                         ▼
+                  ┌─────────────┐
+                  │  ANALYSIS   │
+                  │  COMPLETE   │
+                  └─────────────┘
+
+#+END_EXAMPLE

@@ -1,0 +1,21 @@
+{
+  "project_name": "some_tittle_of_apps",
+  "project_path": "show flow bussines, flow chart, diagram, describe and analytical, code for it maybe need to fix",
+  "instructions": "structure flow process of  ",
+  "project_info": null,
+  "code_metrics": null,
+  "issues_summary": {
+    "total_issues": 0,
+    "critical": 0,
+    "warning": 0,
+    "info": 0
+  },
+  "security_summary": {
+    "vulnerabilities_count": 0,
+    "high_severity": 0,
+    "medium_severity": 0,
+    "low_severity": 0
+  },
+  "diagrams_count": 0,
+  "rag_response": "Maaf, saya tidak bisa menjawab pertanyaan tersebut karena tidak memiliki konteks yang jelas tentang apa yang ingin Anda ulangi. Jika Anda dapat memberikan lebih banyak informasi atau konteks tentang \"structure flow process\" yang Anda inginkan, saya akan berusaha membantu Anda dengan lebih baik."
+}
