@@ -1,0 +1,3 @@
+[dependencies]
+wasmer = "2.0"
+wasmer-wasi = "2.0"

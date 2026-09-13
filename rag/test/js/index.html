@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WASM Devel</title>
+    <script type="module">
+        import init, { llm_pgd_client } from '../../pkg/lib_presets.js';
+        //save n load from artifactory
+        async function run() {
+            await init();
+            console.log(llm_pgd_client('JavaScript'));
+        }
+
+        run();
+    </script>
+</head>
+<body>
+Check the console for the HTML!
+</body>
+</html>

@@ -1,0 +1,157 @@
+<project>
+
+<dependencies>
+<dependency>
+    <groupId>org.wasmer</groupId>
+    <artifactId>wasmer-jni</artifactId>
+    <version>0.3.0</version>
+</dependency>
+
+    <!-- for GralVM Java -->
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/kawamuray/wasmtime-java</url>
+        </repository>
+    </repositories>
+
+    <dependency>
+        <groupId>org.teavm</groupId>
+        <artifactId>teavm-classlib</artifactId>
+        <version>0.8.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.teavm</groupId>
+        <artifactId>teavm-core</artifactId>
+        <version>0.9.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.teavm</groupId>
+        <artifactId>teavm-wasm-gc-deobfuscator</artifactId>
+        <version>0.12.1</version>
+        <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>com.example</groupId>
+        <artifactId>wasmer-jni</artifactId>
+        <version>1.0</version>
+        <scope>system</scope>
+        <!--<systemPath>${project.basedir}/src/main/resources/lib/wasmer-jni-amd64-windows-0.3.0.jar</systemPath>-->
+        <systemPath>${project.basedir}/lib/wasmer-jni-amd64-windows-0.3.0.jar</systemPath>
+    </dependency>
+
+    <dependency>
+        <groupId>com.bucket4j</groupId>
+        <artifactId>bucket4j-core</artifactId>
+        <version>8.1.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>io.github.resilience4j</groupId>
+        <artifactId>resilience4j-ratelimiter</artifactId>
+        <version>2.0.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.scijava</groupId>
+        <artifactId>native-lib-loader</artifactId>
+        <version>2.3.5</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.graalvm.polyglot</groupId>
+        <artifactId>polyglot</artifactId>
+        <version>24.2.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.graalvm.wasm</groupId>
+        <artifactId>wasm-community</artifactId>
+        <version>24.2.1</version>
+        <type>pom</type>
+        <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>io.github.kawamuray.wasmtime</groupId>
+        <artifactId>wasmtime-java</artifactId>
+        <version>0.6.0</version> <!-- Check for latest version -->
+    </dependency>
+
+</dependencies>
+ <!-- create build naming and version wasm-pgd-v1.0.0  -->
+<!--<dependency>-->
+<!--<groupId>id.co.pegadaian</groupId>-->
+<!--<artifactId>wasm-pgd</artifactId>-->
+<!--<version>1.0.0</version>-->
+<!--</dependency>-->
+
+
+<build>
+<resources>
+    <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+            <include>**/*.wasm</include>
+        </includes>
+    </resource>
+</resources>
+<plugins>
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
+
+    <plugin>
+        <groupId>kr.motd.maven</groupId>
+        <artifactId>os-maven-plugin</artifactId>
+        <version>1.7.0</version>
+        <executions>
+            <execution>
+                <phase>initialize</phase>
+                <goals>
+                    <goal>detect</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+
+
+    <plugin>
+        <groupId>org.teavm</groupId>
+        <artifactId>teavm-maven-plugin</artifactId>
+        <version>0.12.1</version>
+        <dependencies>
+            <dependency>
+                <groupId>org.teavm</groupId>
+                <artifactId>teavm-classlib</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+        </dependencies>
+        <executions>
+            <execution>
+                <goals>
+                    <!-- active kan jika ingin compile using tea VM -->
+                    <!--							<goal>compile</goal>-->
+                </goals>
+                <phase>process-classes</phase>
+                <configuration>
+                    <!--							<mainClass>org.teavm.samples.HelloWorld</mainClass>-->
+                    <mainPageIncluded>true</mainPageIncluded>
+                    <mainClass>com.example.hello_wasm_springboot.HelloWasmSpringbootApplication</mainClass>
+                    <debugInformationGenerated>true</debugInformationGenerated>
+                    <sourceMapsGenerated>true</sourceMapsGenerated>
+                </configuration>
+            </execution>
+        </executions>
+    </plugin>
+
+</plugins>
+</build>
+
+
+        </project>
