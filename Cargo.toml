@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = [
+# #### RAG AGENT ####
+    "rag", #rag module contain agents
+    "agent_difusser", #standalone agent not under rag module
+# ##### RAG MODULE ####
+#    "task",
+#    "execute",
+#    "orchestrate_workflow",
+#    "feedback",
+#    "sharedUtils" #per module
+]
+
+#[workspace.metadata.env]
+#path=".env"

@@ -1,0 +1,238 @@
+on dev
+------
+note: modular monolithics
+https://medium.com/@kanhaaggarwal/forget-microservices-heres-why-spring-modulith-is-the-smarter-choice-in-2025-f88660173bf0
+1 prompt/srv/req.resp
+cari tahu: start 1 ip atau dpt berjalan sendiri (bisa jln sendiri2 tp 1 prompt srv io)
+optimisasi 1 port prompt *connect ke module2 (inside module dpt background process)
+https://github.com/zellij-org/zellij/blob/main/zellij-server/src/lib.rs
+
+1. module shared dibuat
+  1a. - Di If Aja dengan Client ID, Mapping Client Id ke Server Mana, Buat Di Table
+      - Pada Class Code: src/rag_module/embedding/quickEmbedding.rs
+
+2. get LLm from PinLM
+
+3. nyari best practice untuk usecase finance atau industry lain.
+
+4. testing using springboot[ok] and dart[blm test]
+            --> api based
+                --> lib wasm
+       + logger detail dan master --> user (todo)
+       + command tidak full state buat command state example: (todo)
+          + buatlah help dengan isian:
+            + /command: requestCommand[type][free_text]
+            + /data: rate[branch_credit_daterange][free_text]
+            + /data: statefull[desc_corporate_text][free_text]
+            + /data: statefull[code_ext][free_text_question]
+            + /etc for MoE
+            tambahkan type command:
+            + type: 1 untuk code
+            + type: 2 untuk cmd
+
+5. pastikan semua command prompt engine dan MoE (multimodal model) terpenuhi
+    + text --> io ok --> context
+    + img --> io
+          + detect --> restore yolov8 [blm test]
+    + sound --> io ok
+    + video
+    + animation
+
+6. clean code
+
+7. ADD QRCODE dan YOLOV dari backup code
+
+8. dari MoE LLM, RAG menambahkan read code repository dan source realtime
+
+ok
+----
+1. add langchain rs
+        --> and run all request
+                --> method langchain and rag embedding using simple pipe --> ok
+
+add: email , id, username di setiap vec master dan detail--> ok.
+di agent-protocol --> ok
+
+
+BEVY: Buat modelnya pakai apa? ini... .gltf
+https://www.khronos.org/blog/editing-gltf-possibilities-challenges-and-insight-from-ux3d
+https://castle-engine.io/gltf
+https://github.com/KhronosGroup/glTF
+https://www.dicoding.com/blog/tips-bikin-filter-instagram-menggunakan-spark-ar/
+
+
+Upload .env di atas deploy/ di dalam rag_system/
+
+
+
+
+
+------
+
+
+`--target` is for cross-compilation targets (e.g. `x86_64-unknown-linux-gnu`). The correct flag for output directory is `--target-dir`:
+
+```powershell
+cargo run --bin testhandler --target-dir D:\target_rs_build -- "Test query with fastembed"
+```
+
+Or for release:
+```powershell
+cargo build --release --target-dir D:\target_rs_build
+D:\target_rs_build\release\testhandler.exe "Test query with fastembed"
+```
+
+Since we already created [C:\Users\thinkpad123\TCPNRS\DEV_ISTA\rag_system\.cargo\config.toml](cci:7://file:///C:/Users/thinkpad123/TCPNRS/DEV_ISTA/rag_system/.cargo/config.toml:0:0-0:0) with:
+```toml
+[build]
+target-dir = "D:\\target_rs_build"
+```
+
+You can just run **without any extra flags** from the `rag_system` directory:
+```powershell
+cd C:\Users\thinkpad123\TCPNRS\DEV_ISTA\rag_system\rag
+cargo build --release
+D:\target_rs_build\release\testhandler.exe "Test query with fastembed"
+```
+
+The config.toml handles the target dir automatically.
+
+
+
+# Markdown template (best for editing)
+cargo run --bin agent_doc template izin-kerja "C:\path\IzinKerja.md"
+
+# PDF (ready to print)
+cargo run --bin agent_doc template izin-kerja "C:\path\IzinKerja.pdf"
+
+# Word/LibreOffice
+cargo run --bin agent_doc template izin-kerja "C:\path\IzinKerja.docx"
+
+
+install md to pdf 
+# Install via winget
+winget install JohnMacFarlane.Pandoc
+
+# Convert MD to PDF
+pandoc input.md -o output.pdf
+
+# With custom styling
+pandoc input.md -o output.pdf --pdf-engine=xelatex -V geometry:margin=1in
+
+
+
+atau 
+
+# Install
+winget install wkhtmltopdf
+
+# Convert via Grip (render MD to HTML first)
+pip install grip
+grip input.md --export output.html
+wkhtmltopdf output.html output.pdf
+
+
+atau 
+
+# Install
+npm install -g md-to-pdf
+
+# Convert
+md-to-pdf input.md -o output.pdf
+
+atau 
+cargo install mdbook-pdf
+mdbook-pdf
+
+atau pada tambahn di agent_doc
+# Convert the izin-kerja template to PDF
+cargo run --bin agent_doc template izin-kerja izin-kerja.md
+cargo run --bin agent_doc md2pdf izin-kerja.md izin-kerja.pdf 
+
+# Convert the izin-kerja template to PDF
+cargo run --bin agent_doc template izin-kerja izin-kerja.md
+cargo run --bin agent_doc md2pdf izin-kerja.md izin-kerja.pdf
+
+# Generate MD with default content
+cargo run --bin agent_doc template izin-kerja izin-kerja.md
+
+# Convert MD to PDF
+cargo run --bin agent_doc md2pdf izin-kerja.md izin-kerja.pdf
+
+# Or directly generate PDF
+cargo run --bin agent_doc template izin-kerja izin-kerja.pdf
+
+
+# Default: uses filled content (Budi Santoso, Ahmad Rizki, etc.)
+cargo run --bin agent_doc template izin-kerja izin-kerja.md
+
+# Form mode: empty placeholders for manual filling
+$env:AGENT_DOCS="form"
+cargo run --bin agent_doc template izin-kerja izin-kerja-form.md
+
+# Alternative syntax
+$env:AGENT_DOCS="#formcontent"
+cargo run --bin agent_doc template izin-kerja izin-kerja-form.pdf
+
+# Edit .env file to enable form mode
+# Uncomment: AGENT_DOCS=form
+
+# Then run (no need to set env var manually)
+cargo run --bin agent_doc template izin-kerja izin-kerja.md
+
+# Or override with PowerShell env var (takes precedence)
+$env:AGENT_DOCS="form"
+cargo run --bin agent_doc template izin-kerja izin-kerja.md
+
+MD VIEWER On Rust 
+
+md viewer on rust
+
+1. Set Up Your DependenciesAdd the following lines to your Cargo.toml file to include termimad for rich text terminal formatting:toml[dependencies]
+termimad = "0.31"
+Use code with caution.2. Implementation CodeReplace the contents of your src/main.rs file with the following complete program. It reads a local file path passed as a command-line argument, safely loads the content, and outputs the rendered text.rustuse std::env;
+use std::fs;
+use std::path::Path;
+use termimad::MadSkin;
+
+fn main() {
+    // 1. Collect command-line arguments
+    let args: Vec<String> = env::args().collect();
+    
+    if args.len() < 2 {
+        eprintln!("Usage: {} <path-to-markdown-file.md>", args[0]);
+        std::process::exit(1);
+    }
+
+    let file_path = &args[1];
+
+    // 2. Validate file existence
+    if !Path::new(file_path).exists() {
+        eprintln!("Error: File '{}' not found.", file_path);
+        std::process::exit(1);
+    }
+
+    // 3. Read the Markdown file content
+    match fs::read_to_string(file_path) {
+        Ok(markdown_content) => {
+            // 4. Create a default skin terminal renderer
+            let skin = MadSkin::default();
+            
+            // 5. Print the beautifully rendered markdown to stdout
+            skin.print_text(&markdown_content);
+        }
+        Err(err) => {
+            eprintln!("Error reading file: {}", err);
+            std::process::exit(1);
+        }
+    }
+}
+Use code with caution.3. How to Run ItCreate a dummy Markdown file named sample.md in your project root folder.Put some sample syntax inside it:markdown# Welcome to the Rust MD Viewer
+This is a paragraph featuring **bold text** and *italics*.
+
+* Item List 1
+* Item List 2
+
+> Blockquotes work natively too!
+Use code with caution.Run your program via Cargo by passing the path of the sample file:bashcargo run -- sample.md
+Use code with caution.Other Ecosystem AlternativesIf you require specialized functionality beyond terminal rendering, check out these alternatives:Web & HTML Generation: Use the comrak or pulldown-cmark crates to safely parse and translate raw Markdown into HTML elements.Pre-built Binaries: For complete out-of-the-box CLI application tools, look into mdr (features live-reload and Mermaid diagram extensions) or md-tui (provides full interactive Vim-style keyboard navigation).Would you like to extend this viewer to support syntax highlighting for code blocks,or prefer to transform the output into a local web-browser live preview

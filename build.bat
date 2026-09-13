@@ -1,0 +1,1 @@
+cargo build --release --jobs 3
