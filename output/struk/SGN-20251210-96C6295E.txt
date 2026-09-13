@@ -1,0 +1,58 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║                    STRUK GADAI NFT                               ║
+║                 (NFT Pawn Receipt)                               ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Nomor Struk    : SGN-20251210-96C6295E                         ║
+║  Tanggal        : 10-12-2025 13:53:37 WIB                   ║
+╠══════════════════════════════════════════════════════════════════╣
+║  INFORMASI PEMILIK                                               ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Nama           : Budi Santoso                                  ║
+║  Alamat Wallet  : 0x742d35Cc6634C0532925a3b844Bc9e7595f2bD87    ║
+╠══════════════════════════════════════════════════════════════════╣
+║  DETAIL NFT YANG DIGADAIKAN                                      ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Koleksi        : Bored Ape Yacht Club                          ║
+║  Token ID       : 1234                                          ║
+║  Contract       : 0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D    ║
+║  Blockchain     : Ethereum                                      ║
+║  Standard       : ERC-721                                       ║
+╠══════════════════════════════════════════════════════════════════╣
+║  DETAIL PINJAMAN                                                 ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Nilai Taksiran :         50.0000 ETH                        ║
+║  LTV Ratio      :              40%                           ║
+║  Jumlah Pinjaman:         20.0000 ETH                        ║
+║  Suku Bunga     :            50.0% per tahun                ║
+║  Tenor          :              30 hari                       ║
+║  Jatuh Tempo    : 09-01-2026                                    ║
+║  Platform       : NFTfi                                         ║
+║  ──────────────────────────────────────────────────────────────  ║
+║  Biaya Admin    :          0.2000 ETH                        ║
+║  TOTAL PELUNASAN:         21.0219 ETH                        ║
+╠══════════════════════════════════════════════════════════════════╣
+║  PENILAIAN RISIKO                                                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Tingkat Risiko : SEDANG-TINGGI                                 ║
+║  Volatilitas    : SEDANG - Perlu monitoring harga koleksi       ║
+║  Likuidasi      : SEDANG - LTV 30-50% memberikan buffer         ║
+╠══════════════════════════════════════════════════════════════════╣
+║  STATUS DOKUMEN                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Status         : Draft                                         ║
+║  Siap Jaminan   : ✓ Ya                                          ║
+║  Siap Jual      : ✓ Ya                                          ║
+╠══════════════════════════════════════════════════════════════════╣
+║  METADATA & VERIFIKASI                                           ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Hash Dokumen   : fe045116453689b7aaab433072ad2ea408518a5f...  ║
+║  IPFS CID       : Belum tersimpan di IPFS                       ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║  Dokumen ini sah sebagai bukti gadai NFT dan dapat digunakan    ║
+║  sebagai jaminan pinjaman atau dijual di marketplace.            ║
+║                                                                  ║
+║  Verifikasi: https://ipfs.io/ipfs/N/A              ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,61 @@
+{
+  "nomor_struk": "SGN-20251210-CFDC3C66",
+  "tanggal_terbit": "10-12-2025",
+  "waktu_terbit": "13:56:08 WIB",
+  "nama_pemilik": "istamar",
+  "alamat_wallet": "0x0000123456789",
+  "detail_nft": {
+    "nama_koleksi": "suber",
+    "token_id": "12343264324327326432427token",
+    "contract_address": "0x000012345678910contract",
+    "blockchain": "Ethereum",
+    "standard": "ERC-721",
+    "deskripsi": "suber #12343264324327326432427token",
+    "gambar_url": null,
+    "atribut": []
+  },
+  "detail_pinjaman": {
+    "nilai_taksiran": 0.000123,
+    "mata_uang": "ETH",
+    "ltv_ratio": 0.4,
+    "jumlah_pinjaman": 0.0000492,
+    "suku_bunga_tahunan": 50.0,
+    "tenor_hari": 30,
+    "tanggal_jatuh_tempo": "09-01-2026",
+    "platform_lending": "NFTfi",
+    "biaya_admin": 4.92e-7,
+    "total_pelunasan": 0.00005171391780821918
+  },
+  "penilaian_risiko": {
+    "tingkat_risiko": "SEDANG-TINGGI",
+    "risiko_volatilitas": "TINGGI - NFT sangat volatile, harga bisa turun drastis",
+    "risiko_likuidasi": "SEDANG - LTV 30-50% memberikan buffer",
+    "risiko_smart_contract": "Rendah - Platform terverifikasi",
+    "rekomendasi": [
+      "Gunakan platform terpercaya seperti NFTfi atau BendDAO",
+      "Pastikan LTV ratio tidak melebihi 50% untuk buffer volatilitas",
+      "Audit smart contract escrow sebelum transaksi besar",
+      "PERINGATAN: Risiko tinggi, pastikan punya rencana exit"
+    ]
+  },
+  "status": {
+    "status_dokumen": "Draft",
+    "siap_jaminan": true,
+    "siap_marketplace": true,
+    "terverifikasi": false
+  },
+  "metadata": {
+    "versi_dokumen": "1.0",
+    "ipfs_cid": null,
+    "ipfs_url": null,
+    "hash_dokumen": "bf0ff807165a867be2078fb9e8fd0bba12818aa2fffb4f1d6e25a81336317aba",
+    "dibuat_oleh": "NFT Pawn Chain RAG System",
+    "catatan": null
+  },
+  "tanda_tangan_digital": {
+    "algoritma": "SHA-256",
+    "hash_konten": "bf0ff807165a867be2078fb9e8fd0bba12818aa2fffb4f1d6e25a81336317aba",
+    "timestamp": 1765349768,
+    "valid": true
+  }
+}

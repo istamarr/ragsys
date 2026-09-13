@@ -1,0 +1,61 @@
+{
+  "nomor_struk": "SGN-20251210-96C6295E",
+  "tanggal_terbit": "10-12-2025",
+  "waktu_terbit": "13:53:37 WIB",
+  "nama_pemilik": "Budi Santoso",
+  "alamat_wallet": "0x742d35Cc6634C0532925a3b844Bc9e7595f2bD87",
+  "detail_nft": {
+    "nama_koleksi": "Bored Ape Yacht Club",
+    "token_id": "1234",
+    "contract_address": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D",
+    "blockchain": "Ethereum",
+    "standard": "ERC-721",
+    "deskripsi": "Bored Ape Yacht Club #1234",
+    "gambar_url": null,
+    "atribut": []
+  },
+  "detail_pinjaman": {
+    "nilai_taksiran": 50.0,
+    "mata_uang": "ETH",
+    "ltv_ratio": 0.4,
+    "jumlah_pinjaman": 20.0,
+    "suku_bunga_tahunan": 50.0,
+    "tenor_hari": 30,
+    "tanggal_jatuh_tempo": "09-01-2026",
+    "platform_lending": "NFTfi",
+    "biaya_admin": 0.2,
+    "total_pelunasan": 21.02191780821918
+  },
+  "penilaian_risiko": {
+    "tingkat_risiko": "SEDANG-TINGGI",
+    "risiko_volatilitas": "SEDANG - Perlu monitoring harga koleksi",
+    "risiko_likuidasi": "SEDANG - LTV 30-50% memberikan buffer",
+    "risiko_smart_contract": "Rendah - Platform terverifikasi",
+    "rekomendasi": [
+      "Gunakan platform terpercaya seperti NFTfi atau BendDAO",
+      "Pastikan LTV ratio tidak melebihi 50% untuk buffer volatilitas",
+      "Audit smart contract escrow sebelum transaksi besar",
+      "PERINGATAN: Risiko tinggi, pastikan punya rencana exit"
+    ]
+  },
+  "status": {
+    "status_dokumen": "Draft",
+    "siap_jaminan": true,
+    "siap_marketplace": true,
+    "terverifikasi": false
+  },
+  "metadata": {
+    "versi_dokumen": "1.0",
+    "ipfs_cid": null,
+    "ipfs_url": null,
+    "hash_dokumen": "fe045116453689b7aaab433072ad2ea408518a5f67ede3470cf5c2da53243ec7",
+    "dibuat_oleh": "NFT Pawn Chain RAG System",
+    "catatan": null
+  },
+  "tanda_tangan_digital": {
+    "algoritma": "SHA-256",
+    "hash_konten": "fe045116453689b7aaab433072ad2ea408518a5f67ede3470cf5c2da53243ec7",
+    "timestamp": 1765349617,
+    "valid": true
+  }
+}

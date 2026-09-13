@@ -1,0 +1,58 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║                    STRUK GADAI NFT                               ║
+║                 (NFT Pawn Receipt)                               ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Nomor Struk    : SGN-20251210-CFDC3C66                         ║
+║  Tanggal        : 10-12-2025 13:56:08 WIB                   ║
+╠══════════════════════════════════════════════════════════════════╣
+║  INFORMASI PEMILIK                                               ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Nama           : istamar                                       ║
+║  Alamat Wallet  : 0x0000123456789                               ║
+╠══════════════════════════════════════════════════════════════════╣
+║  DETAIL NFT YANG DIGADAIKAN                                      ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Koleksi        : suber                                         ║
+║  Token ID       : 12343264324327326432427token                  ║
+║  Contract       : 0x000012345678910contract                     ║
+║  Blockchain     : Ethereum                                      ║
+║  Standard       : ERC-721                                       ║
+╠══════════════════════════════════════════════════════════════════╣
+║  DETAIL PINJAMAN                                                 ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Nilai Taksiran :          0.0001 ETH                        ║
+║  LTV Ratio      :              40%                           ║
+║  Jumlah Pinjaman:          0.0000 ETH                        ║
+║  Suku Bunga     :            50.0% per tahun                ║
+║  Tenor          :              30 hari                       ║
+║  Jatuh Tempo    : 09-01-2026                                    ║
+║  Platform       : NFTfi                                         ║
+║  ──────────────────────────────────────────────────────────────  ║
+║  Biaya Admin    :          0.0000 ETH                        ║
+║  TOTAL PELUNASAN:          0.0001 ETH                        ║
+╠══════════════════════════════════════════════════════════════════╣
+║  PENILAIAN RISIKO                                                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Tingkat Risiko : SEDANG-TINGGI                                 ║
+║  Volatilitas    : TINGGI - NFT sangat volatile, harga bisa t... ║
+║  Likuidasi      : SEDANG - LTV 30-50% memberikan buffer         ║
+╠══════════════════════════════════════════════════════════════════╣
+║  STATUS DOKUMEN                                                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Status         : Draft                                         ║
+║  Siap Jaminan   : ✓ Ya                                          ║
+║  Siap Jual      : ✓ Ya                                          ║
+╠══════════════════════════════════════════════════════════════════╣
+║  METADATA & VERIFIKASI                                           ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Hash Dokumen   : bf0ff807165a867be2078fb9e8fd0bba12818aa2...  ║
+║  IPFS CID       : Belum tersimpan di IPFS                       ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║  Dokumen ini sah sebagai bukti gadai NFT dan dapat digunakan    ║
+║  sebagai jaminan pinjaman atau dijual di marketplace.            ║
+║                                                                  ║
+║  Verifikasi: https://ipfs.io/ipfs/N/A              ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
